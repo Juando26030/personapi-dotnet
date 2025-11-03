@@ -42,6 +42,7 @@ namespace personapi_dotnet.Controllers.Api
         }
 
         // PUT: api/TelefonosApi/5
+        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
         public async Task<IActionResult> PutTelefono(string id, Telefono telefono)
         {
@@ -72,6 +73,7 @@ namespace personapi_dotnet.Controllers.Api
         }
 
         // POST: api/TelefonosApi
+        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         public async Task<ActionResult<Telefono>> PostTelefono(Telefono telefono)
         {
@@ -117,4 +119,3 @@ namespace personapi_dotnet.Controllers.Api
         }
     }
 }
-

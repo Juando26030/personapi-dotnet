@@ -20,4 +20,3 @@ public partial class Estudio
     [JsonIgnore]
     public virtual Profesion IdProfNavigation { get; set; } = null!;
 }
-

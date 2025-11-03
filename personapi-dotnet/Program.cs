@@ -13,20 +13,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<PersonasApiController>();
+builder.Services.AddScoped<ProfesionesApiController>();
 builder.Services.AddScoped<EstudiosApiController>();
 builder.Services.AddScoped<TelefonosApiController>();
 
-
-else
-{
-
-    app.UseSwagger();
-    app.UseSwaggerUI(c =>
-    {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "API v1");
-    });
-
-}
 
 
 builder.Services.AddEndpointsApiExplorer();
@@ -42,16 +32,26 @@ builder.Services.AddDbContext<PersonaDbContext>(options =>
 
 builder.WebHost.ConfigureKestrel(serverOptions =>
 {
-    serverOptions.ListenAnyIP(8080);
+    serverOptions.ListenAnyIP(8080); 
 });
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
 }
+else
+{
+ 
+    app.UseSwagger();
+    app.UseSwaggerUI(c =>
+    {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "API v1");
+    });
+
+}
+
 
 app.UseStaticFiles();
 
@@ -64,4 +64,3 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
-

@@ -1,3 +1,44 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
+using personapi_dotnet.Models.Entities;
+
+namespace personapi_dotnet.Controllers
+{
+    public class TelefonosController : Controller
+    {
+        private readonly PersonaDbContext _context;
+
+        public TelefonosController(PersonaDbContext context)
+        {
+            _context = context;
+        }
+
+        // GET: Telefonos
+        public async Task<IActionResult> Index()
+        {
+            var personaDbContext = _context.Telefonos.Include(t => t.DocumentoPersona);
+            return View(await personaDbContext.ToListAsync());
+        }
+
+        // GET: Telefonos/Details/5
+        public async Task<IActionResult> Details(string id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var telefono = await _context.Telefonos
+                .Include(t => t.DocumentoPersona)
+                .FirstOrDefaultAsync(m => m.Num == id);
+            if (telefono == null)
+            {
+                return NotFound();
             }
 
             return View(telefono);
@@ -11,6 +52,8 @@
         }
 
         // POST: Telefonos/Create
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Num,Oper,Duenio")] Telefono telefono)
@@ -43,6 +86,8 @@
         }
 
         // POST: Telefonos/Edit/5
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(string id, [Bind("Num,Oper,Duenio")] Telefono telefono)
@@ -116,45 +161,3 @@
         }
     }
 }
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using personapi_dotnet.Models.Entities;
-
-namespace personapi_dotnet.Controllers
-{
-    public class TelefonosController : Controller
-    {
-        private readonly PersonaDbContext _context;
-
-        public TelefonosController(PersonaDbContext context)
-        {
-            _context = context;
-        }
-
-        // GET: Telefonos
-        public async Task<IActionResult> Index()
-        {
-            var personaDbContext = _context.Telefonos.Include(t => t.DocumentoPersona);
-            return View(await personaDbContext.ToListAsync());
-        }
-
-        // GET: Telefonos/Details/5
-        public async Task<IActionResult> Details(string id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var telefono = await _context.Telefonos
-                .Include(t => t.DocumentoPersona)
-                .FirstOrDefaultAsync(m => m.Num == id);
-            if (telefono == null)
-            {
-                return NotFound();
-

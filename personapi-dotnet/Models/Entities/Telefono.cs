@@ -15,4 +15,3 @@ public partial class Telefono
 	[JsonIgnore]
 	public virtual Persona DocumentoPersona { get; set; } = null!;
 }
-

@@ -1,3 +1,45 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
+using personapi_dotnet.Models.Entities;
+
+namespace personapi_dotnet.Controllers
+{
+    public class ProfesionesController : Controller
+    {
+        private readonly PersonaDbContext _context;
+
+        public ProfesionesController(PersonaDbContext context)
+        {
+            _context = context;
+        }
+
+        // GET: Profesiones
+        public async Task<IActionResult> Index()
+        {
+            return View(await _context.Profesions.ToListAsync());
+        }
+
+        // GET: Profesiones/Details/5
+        public async Task<IActionResult> Details(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var profesion = await _context.Profesions
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (profesion == null)
+            {
+                return NotFound();
+            }
+
+            return View(profesion);
         }
 
         // GET: Profesiones/Create
@@ -7,6 +49,8 @@
         }
 
         // POST: Profesiones/Create
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Nom,Des")] Profesion profesion)
@@ -37,6 +81,8 @@
         }
 
         // POST: Profesiones/Edit/5
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Nom,Des")] Profesion profesion)
@@ -108,46 +154,3 @@
         }
     }
 }
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using personapi_dotnet.Models.Entities;
-
-namespace personapi_dotnet.Controllers
-{
-    public class ProfesionesController : Controller
-    {
-        private readonly PersonaDbContext _context;
-
-        public ProfesionesController(PersonaDbContext context)
-        {
-            _context = context;
-        }
-
-        // GET: Profesiones
-        public async Task<IActionResult> Index()
-        {
-            return View(await _context.Profesions.ToListAsync());
-        }
-
-        // GET: Profesiones/Details/5
-        public async Task<IActionResult> Details(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var profesion = await _context.Profesions
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (profesion == null)
-            {
-                return NotFound();
-            }
-
-            return View(profesion);
-

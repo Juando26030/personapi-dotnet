@@ -15,4 +15,3 @@ public partial class Profesion
     [JsonIgnore]
     public virtual ICollection<Estudio> Estudios { get; set; } = new List<Estudio>();
 }
-

@@ -1,0 +1,78 @@
+/* _content/personapi-dotnet/Views/Shared/_Layout.cshtml.rz.scp.css */
+}
+
+.box-shadow[b-8xpzuv8i67] {
+    box-shadow: none;
+}
+
+button.accept-policy[b-8xpzuv8i67] {
+    font-size: 1rem;
+    line-height: normal;
+    padding: 0.4rem 1rem;
+    border-radius: 0;
+    background-color: transparent;
+    color: inherit;
+    border: none;
+}
+
+    button.accept-policy:hover[b-8xpzuv8i67] {
+        background-color: transparent;
+    }
+
+.footer[b-8xpzuv8i67] {
+    position: static;
+    width: 100%;
+    background-color: transparent;
+    color: inherit;
+    text-align: center;
+    font-size: 0.9rem;
+    border-top: none;
+    line-height: normal;
+    box-shadow: none;
+}
+a.navbar-brand[b-8xpzuv8i67] {
+    white-space: nowrap;
+    text-align: left;
+    font-weight: normal;
+    font-size: 1rem;
+    color: inherit;
+}
+
+a[b-8xpzuv8i67] {
+    color: inherit;
+    text-decoration: none;
+}
+
+    a:hover[b-8xpzuv8i67] {
+        text-decoration: underline;
+    }
+
+.btn-primary[b-8xpzuv8i67] {
+    color: inherit;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 0.5rem 1rem;
+    font-weight: normal;
+}
+
+    .btn-primary:hover[b-8xpzuv8i67] {
+        background-color: transparent;
+        border: none;
+    }
+
+.nav-pills .nav-link.active[b-8xpzuv8i67],
+.nav-pills .show > .nav-link[b-8xpzuv8i67] {
+    color: inherit;
+    background-color: transparent;
+    border: none;
+    font-weight: normal;
+}
+
+.border-top[b-8xpzuv8i67] {
+    border-top: none;
+}
+
+.border-bottom[b-8xpzuv8i67] {
+    border-bottom: none;
+
