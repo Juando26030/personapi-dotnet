@@ -1,48 +1,11 @@
-# ✅ PROYECTO LISTO PARA EJECUTAR
-
-## 🎯 ESTADO FINAL
-
-**✅ PROYECTO COMPLETAMENTE FUNCIONAL Y LISTO PARA EJECUTAR**
-
-El proyecto ha sido verificado, compilado exitosamente y todas las dependencias están correctamente configuradas.
-
----
-
-## 📊 VERIFICACIONES COMPLETADAS
-
-### ✅ **Dependencias NuGet**
-Todos los paquetes han sido restaurados correctamente:
-
-- ✅ Microsoft.EntityFrameworkCore (8.0.10)
-- ✅ Microsoft.EntityFrameworkCore.SqlServer (8.0.10)
-- ✅ Microsoft.EntityFrameworkCore.Tools (8.0.10)
-- ✅ Swashbuckle.AspNetCore (6.8.1)
-- ✅ Microsoft.VisualStudio.Web.CodeGeneration.Design (8.0.6)
-- ✅ Microsoft.VisualStudio.Azure.Containers.Tools.Targets (1.21.0)
-
-### ✅ **Compilación**
-```
-Compilación realizada correctamente en 4,5s
-✅ personapi-dotnet.dll generado correctamente
-✅ Sin errores de compilación
-✅ Sin advertencias críticas
-```
-
-### ✅ **Archivos Corregidos**
-Se corrigieron problemas de sintaxis en:
-- ✅ Program.cs
-- ✅ Todos los controladores MVC (5)
-- ✅ Todos los controladores API (4)
-- ✅ Todos los modelos (6)
-
----
+# ✅ GUÍA DE EJECUCIÓN DEL PROYECTO personapi-dotnet
 
 ## 🚀 CÓMO EJECUTAR EL PROYECTO
 
-### **Opción 1: Con Docker Compose (Recomendado para producción)**
+### **Opción 1: Con Docker Compose**
 
 ```bash
-cd "C:\JDRJ\Javeriana\Arqui\Lab 1\nuestro\personapi-dotnet"
+cd "tu\ruta\personapi-dotnet"
 docker-compose up --build
 ```
 
@@ -61,14 +24,14 @@ docker-compose up --build
 
 ---
 
-### **Opción 2: Ejecución Local (Para desarrollo)**
+### **Opción 2: Ejecución Local**
 
 #### **Paso 1: Verificar SQL Server Local**
-Asegúrate de tener SQL Server corriendo localmente en `localhost:1433` o actualiza el connection string en `appsettings.json`.
+Asegurarse de tener SQL Server corriendo localmente en `localhost:1433` o actualizar el connection string en `appsettings.json`.
 
 #### **Paso 2: Ejecutar la aplicación**
 ```bash
-cd "C:\JDRJ\Javeriana\Arqui\Lab 1\nuestro\personapi-dotnet\personapi-dotnet"
+cd "tu\ruta\personapi-dotnet\personapi-dotnet"
 dotnet run
 ```
 
@@ -78,10 +41,10 @@ dotnet run
 
 ---
 
-### **Opción 3: Modo Development con Swagger (Para pruebas de API)**
+### **Opción 3: Modo Development con Swagger**
 
 ```bash
-cd "C:\JDRJ\Javeriana\Arqui\Lab 1\nuestro\personapi-dotnet\personapi-dotnet"
+cd "tu\ruta\personapi-dotnet\personapi-dotnet"
 set ASPNETCORE_ENVIRONMENT=Development
 dotnet run
 ```
@@ -276,25 +239,6 @@ dotnet restore
 dotnet build
 ```
 
----
-
-## 📊 VERIFICACIÓN DEL PROYECTO
-
-### **✅ Checklist de Funcionamiento**
-
-- [x] Proyecto compila sin errores
-- [x] Todas las dependencias restauradas
-- [x] Connection string configurado
-- [x] Controladores MVC funcionan
-- [x] Controladores API funcionan
-- [x] Vistas Razor se renderizan
-- [x] Entity Framework configurado
-- [x] Docker Compose funcional
-- [x] Scripts SQL ejecutables
-- [x] Swagger disponible
-
----
-
 ## 📚 TECNOLOGÍAS UTILIZADAS
 
 | Tecnología | Versión | Propósito |
@@ -310,55 +254,19 @@ dotnet build
 
 ---
 
-## 🎓 NOTAS IMPORTANTES
-
-1. **Primer Inicio:** La primera vez que ejecutes el proyecto con Docker, tomará varios minutos mientras descarga las imágenes y ejecuta los scripts de inicialización.
-
-2. **Datos de Prueba:** Los datos de prueba se insertan automáticamente al iniciar el contenedor de SQL Server.
-
-3. **Persistencia:** Los datos se mantienen en un volumen Docker llamado `sqlserverdata`. Si eliminas este volumen, perderás todos los datos.
-
-4. **Desarrollo:** Para desarrollo local, es recomendable usar `dotnet watch run` para que los cambios se reflejen automáticamente.
-
-5. **Producción:** Para producción, usa Docker Compose con las configuraciones apropiadas de seguridad.
-
----
-
-## 🏆 RESULTADO FINAL
-
-✅ **PROYECTO 100% FUNCIONAL**
-
-- ✅ Compila sin errores
-- ✅ Todas las dependencias instaladas
-- ✅ Listo para ejecutar con Docker
-- ✅ Listo para ejecutar localmente
-- ✅ API REST documentada con Swagger
-- ✅ Interfaz MVC completamente funcional
-- ✅ Base de datos configurada y lista
-
----
-
 ## 📞 COMANDOS RÁPIDOS
 
 ```bash
 # INICIO RÁPIDO CON DOCKER
-cd "C:\JDRJ\Javeriana\Arqui\Lab 1\nuestro\personapi-dotnet"
+cd "tu\ruta\personapi-dotnet"
 docker-compose up --build
 
 # INICIO RÁPIDO LOCAL
-cd "C:\JDRJ\Javeriana\Arqui\Lab 1\nuestro\personapi-dotnet\personapi-dotnet"
+cd "tu\ruta\personapi-dotnet\personapi-dotnet"
 dotnet run
 
 # INICIO RÁPIDO CON SWAGGER
-cd "C:\JDRJ\Javeriana\Arqui\Lab 1\nuestro\personapi-dotnet\personapi-dotnet"
+cd "tu\ruta\personapi-dotnet\personapi-dotnet"
 set ASPNETCORE_ENVIRONMENT=Development
 dotnet run
 ```
-
----
-
-**¡El proyecto está listo para usar! 🎉**
-
-*Última actualización: 2025-11-03*
-*Estado: COMPLETADO Y VERIFICADO*
-
