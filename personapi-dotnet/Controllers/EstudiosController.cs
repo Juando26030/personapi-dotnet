@@ -12,6 +12,7 @@ namespace personapi_dotnet.Controllers
     public class EstudiosController : Controller
     {
         private readonly PersonaDbContext _context;
+        
 
         public EstudiosController(PersonaDbContext context)
         {

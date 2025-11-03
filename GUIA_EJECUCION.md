@@ -1,6 +1,6 @@
-# ✅ GUÍA DE EJECUCIÓN DEL PROYECTO personapi-dotnet
+#  GUÍA DE EJECUCIÓN DEL PROYECTO personapi-dotnet
 
-## 🚀 CÓMO EJECUTAR EL PROYECTO
+## CÓMO EJECUTAR EL PROYECTO
 
 ### **Opción 1: Con Docker Compose**
 
@@ -10,17 +10,17 @@ docker-compose up --build
 ```
 
 **Accesos:**
-- 🌐 Aplicación Web: http://localhost:32773
-- 🗄️ SQL Server: localhost:1433
-- 👤 Usuario SQL: sa
-- 🔐 Password: Password123!
+-  Aplicación Web: http://localhost:32773
+-  SQL Server: localhost:1433
+-  Usuario SQL: sa
+-  Password: Password123!
 
 **Características:**
-- ✅ Base de datos SQL Server en contenedor
-- ✅ Aplicación .NET en contenedor
-- ✅ Datos persistentes en volúmenes Docker
-- ✅ Red privada entre contenedores
-- ✅ Scripts DDL y DML ejecutados automáticamente
+-  Base de datos SQL Server en contenedor
+-  Aplicación .NET en contenedor
+-  Datos persistentes en volúmenes Docker
+-  Red privada entre contenedores
+-  Scripts DDL y DML ejecutados automáticamente
 
 ---
 
@@ -36,8 +36,8 @@ dotnet run
 ```
 
 **Accesos:**
-- 🌐 Aplicación Web: http://localhost:5000
-- 📱 HTTPS: https://localhost:5001
+-  Aplicación Web: http://localhost:5000
+-  HTTPS: https://localhost:5001
 
 ---
 
@@ -50,9 +50,9 @@ dotnet run
 ```
 
 **Accesos:**
-- 📡 Swagger UI: http://localhost:8080/swagger
-- 🌐 Aplicación Web: http://localhost:8080
-- 🔧 API REST: http://localhost:8080/api/[controller]
+-  Swagger UI: http://localhost:8080/swagger
+-  Aplicación Web: http://localhost:8080
+-  API REST: http://localhost:8080/api/[controller]
 
 **Endpoints disponibles:**
 - `GET/POST/PUT/DELETE /api/PersonasApi`
@@ -62,7 +62,7 @@ dotnet run
 
 ---
 
-## 📝 ESTRUCTURA DE LA BASE DE DATOS
+##  ESTRUCTURA DE LA BASE DE DATOS
 
 ### **Tablas Creadas**
 
@@ -92,14 +92,14 @@ dotnet run
 ### **Datos de Prueba**
 
 El proyecto incluye datos de prueba que se insertan automáticamente:
-- ✅ 3 Personas
-- ✅ 3 Profesiones
-- ✅ 3 Teléfonos
-- ✅ 3 Estudios
+-  3 Personas
+-  3 Profesiones
+-  3 Teléfonos
+-  3 Estudios
 
 ---
 
-## 🔧 COMANDOS ÚTILES
+##  COMANDOS ÚTILES
 
 ### **Compilación**
 ```bash
@@ -151,36 +151,36 @@ docker-compose down -v
 
 ---
 
-## 📦 FUNCIONALIDADES IMPLEMENTADAS
+##  FUNCIONALIDADES IMPLEMENTADAS
 
 ### **Aplicación Web MVC**
-✅ Página de inicio (Home)
-✅ CRUD completo de Personas
-✅ CRUD completo de Profesiones
-✅ CRUD completo de Teléfonos
-✅ CRUD completo de Estudios
-✅ Navegación entre módulos
-✅ Validación de formularios
-✅ Manejo de errores
+ Página de inicio (Home)
+ CRUD completo de Personas
+ CRUD completo de Profesiones
+ CRUD completo de Teléfonos
+ CRUD completo de Estudios
+ Navegación entre módulos
+ Validación de formularios
+ Manejo de errores
 
 ### **API REST**
-✅ 20 Endpoints RESTful
-✅ Documentación con Swagger/OpenAPI
-✅ Serialización JSON
-✅ Verbos HTTP correctos (GET, POST, PUT, DELETE)
-✅ Códigos de estado HTTP apropiados
-✅ Manejo de errores
+ 20 Endpoints RESTful
+ Documentación con Swagger/OpenAPI
+ Serialización JSON
+ Verbos HTTP correctos (GET, POST, PUT, DELETE)
+ Códigos de estado HTTP apropiados
+ Manejo de errores
 
 ### **Base de Datos**
-✅ Entity Framework Core
-✅ Code First approach
-✅ Relaciones entre entidades (1:N, N:M)
-✅ Migraciones automáticas
-✅ Scripts de inicialización
+ Entity Framework Core
+ Code First approach
+ Relaciones entre entidades (1:N, N:M)
+Migraciones automáticas
+ Scripts de inicialización
 
 ---
 
-## 🎯 URLS IMPORTANTES
+## URLS IMPORTANTES
 
 ### **Con Docker (Puerto 32773)**
 | Función | URL |
@@ -203,7 +203,7 @@ docker-compose down -v
 
 ---
 
-## 🐛 SOLUCIÓN DE PROBLEMAS COMUNES
+## SOLUCIÓN DE PROBLEMAS COMUNES
 
 ### **Error: "No se puede conectar a SQL Server"**
 **Solución:**
@@ -239,7 +239,7 @@ dotnet restore
 dotnet build
 ```
 
-## 📚 TECNOLOGÍAS UTILIZADAS
+## TECNOLOGÍAS UTILIZADAS
 
 | Tecnología | Versión | Propósito |
 |------------|---------|-----------|
@@ -254,7 +254,7 @@ dotnet build
 
 ---
 
-## 📞 COMANDOS RÁPIDOS
+## COMANDOS RÁPIDOS
 
 ```bash
 # INICIO RÁPIDO CON DOCKER

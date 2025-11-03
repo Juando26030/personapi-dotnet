@@ -20,6 +20,7 @@ public partial class PersonaDbContext : DbContext
     }
 
     public virtual DbSet<Estudio> Estudios { get; set; }
+    
 
     public virtual DbSet<Persona> Personas { get; set; }
 
@@ -31,7 +32,7 @@ public partial class PersonaDbContext : DbContext
     {
         if (!optionsBuilder.IsConfigured)
         {
-            // Obtiene la cadena de conexión desde appsettings.json o las variables de entorno
+            // Obtiene la cadena de conexiï¿½n desde appsettings.json o las variables de entorno
             var connectionString = _configuration.GetConnectionString("DefaultConnection");
             optionsBuilder.UseSqlServer(connectionString);
         }

@@ -16,6 +16,7 @@ namespace personapi_dotnet.Controllers
         public PersonasController(PersonaDbContext context)
         {
             _context = context;
+            
         }
 
         // GET: Personas

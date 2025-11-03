@@ -11,6 +11,7 @@ public partial class Telefono
 	public string Oper { get; set; } = null!;
 
 	public long Duenio { get; set; }
+	
 
 	[JsonIgnore]
 	public virtual Persona DocumentoPersona { get; set; } = null!;
