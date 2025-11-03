@@ -3,8 +3,8 @@
 **Laboratorio 1 .Net**
 
 ## Integrantes
-- Camila Castro Neiza
-- Juan David Barajas Urrea
+- Jonathan Jurado
+- Juan David
 
 ## Pasos
 - Correr el Docker-Compose en el terminal con docker-compose up --build 
