@@ -19,7 +19,7 @@ API RESTful desarrollada con ASP.NET Core 8.0 para la gestión de personas, prof
 - [Configuración](#-configuración)
 - [Documentación](#-documentación)
 - [Contribuir](#-contribuir)
-- [Licencia](#-licencia)
+
 
 ## Características
 
@@ -283,7 +283,7 @@ curl -X POST "http://localhost:32773/api/personas" \
 curl -X GET "http://localhost:32773/api/personas"
 ```
 
-## ⚙️ Configuración
+## Configuración
 
 ### Variables de Entorno (Docker)
 
@@ -313,7 +313,7 @@ En `appsettings.json`:
 
 La aplicación escucha en el puerto **8080** dentro del contenedor y se mapea al puerto **32773** en el host.
 
-## 📚 Documentación
+## Documentación
 
 ### Swagger UI
 
@@ -322,10 +322,10 @@ Accede a la documentación interactiva de la API en modo desarrollo:
 **URL:** http://localhost:32773/swagger (con Docker) o http://localhost:8080/swagger (local)
 
 Swagger proporciona:
-- 📖 Documentación completa de endpoints
-- 🧪 Interfaz para probar la API
-- 📝 Esquemas de datos
-- 🔍 Validaciones y ejemplos
+-  Documentación completa de endpoints
+- Interfaz para probar la API
+- Esquemas de datos
+
 
 **Nota:** Para habilitar Swagger en modo local, ejecuta:
 ```powershell
@@ -342,15 +342,8 @@ La aplicación incluye una interfaz web completa con operaciones CRUD:
 - **Estudios:** http://localhost:32773/Estudios
 - **Teléfonos:** http://localhost:32773/Telefonos
 
-## 🧪 Testing
 
-Para ejecutar pruebas (si están implementadas):
-
-```bash
-dotnet test
-```
-
-## 🔐 Seguridad
+## Seguridad
 
 - Las contraseñas de base de datos deben cambiarse en producción
 - Implementar autenticación JWT para la API
@@ -358,7 +351,7 @@ dotnet test
 - Usar HTTPS en producción
 - Implementar rate limiting
 
-## 🚀 Despliegue
+##  Despliegue
 
 ### Docker Hub
 
@@ -380,7 +373,7 @@ docker push username/personapi-dotnet:latest
 3. Actualizar cadena de conexión
 4. Desplegar desde Docker Hub o Azure Container Registry
 
-## 🤝 Contribuir
+##  Contribuir
 
 1. Fork del proyecto
 2. Crear una rama para tu feature (`git checkout -b feature/AmazingFeature`)
@@ -388,35 +381,5 @@ docker push username/personapi-dotnet:latest
 4. Push a la rama (`git push origin feature/AmazingFeature`)
 5. Abrir un Pull Request
 
-### Estándares de Código
 
-- Seguir convenciones de C# (.NET)
-- Comentar código complejo
-- Escribir tests para nuevas funcionalidades
-- Actualizar documentación
-
-## 📝 Licencia
-
-Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más detalles.
-
-## 👥 Autores
-
-* **Camila Castro Neiza** - *Desarrollo*
-* **Juan David Barajas Urrea** - *Desarrollo*
-* **Juando26030** - *Repository* - [GitHub](https://github.com/Juando26030)
-
-## 🙏 Agradecimientos
-
-- ASP.NET Core Team
-- Entity Framework Core Team
-- Comunidad de .NET
-
-## 📞 Contacto
-
-Para preguntas o soporte:
-- GitHub Issues: [Crear Issue](https://github.com/Juando26030/personapi-dotnet/issues)
-
----
-
-⭐️ **Si este proyecto te fue útil, considera darle una estrella en GitHub** ⭐️
 
