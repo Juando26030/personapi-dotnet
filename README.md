@@ -1,17 +1,12 @@
 # PersonAPI - .NET 8.0
 
-![.NET](https://img.shields.io/badge/.NET-8.0-512BD4?style=flat-square&logo=dotnet)
-![SQL Server](https://img.shields.io/badge/SQL%20Server-2022-CC2927?style=flat-square&logo=microsoftsqlserver)
-![Docker](https://img.shields.io/badge/Docker-Enabled-2496ED?style=flat-square&logo=docker)
-![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
-
 API RESTful desarrollada con ASP.NET Core 8.0 para la gestión de personas, profesiones, estudios y teléfonos. Incluye interfaces web con vistas MVC y endpoints API con documentación Swagger.
 
-## 👥 Integrantes
+## Integrantes
 
 - Jonathan Jurado
 - Juan David Ramirez
-## 📋 Tabla de Contenidos
+## Tabla de Contenidos
 
 - [Características](#-características)
 - [Tecnologías](#-tecnologías)
@@ -38,7 +33,7 @@ API RESTful desarrollada con ASP.NET Core 8.0 para la gestión de personas, prof
 - **Validaciones** de datos
 - **Relaciones** entre entidades
 
-## 🚀 Tecnologías
+##  Tecnologías
 
 ### Backend
 - **ASP.NET Core 8.0** - Framework web
@@ -52,7 +47,7 @@ API RESTful desarrollada con ASP.NET Core 8.0 para la gestión de personas, prof
 - **Docker** - Contenedores
 - **Docker Compose** - Orquestación
 
-## 🏗️ Arquitectura
+##  Arquitectura
 
 El proyecto sigue el patrón **MVC (Model-View-Controller)** con una capa adicional de API REST:
 
@@ -83,7 +78,7 @@ personapi-dotnet/
 └── wwwroot/              # Archivos estáticos
 ```
 
-## 📦 Requisitos Previos
+##  Requisitos Previos
 
 - [.NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
 - [Docker Desktop](https://www.docker.com/products/docker-desktop)
@@ -91,7 +86,7 @@ personapi-dotnet/
 
 **O simplemente Docker** si vas a ejecutar con contenedores.
 
-## 🔧 Instalación
+##  Instalación
 
 ### Opción 1: Con Docker (Recomendado)
 
