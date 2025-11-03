@@ -16,6 +16,7 @@ namespace personapi_dotnet.Controllers
         public IActionResult Index()
         {
             return View();
+            
         }
 
         public IActionResult Privacy()
